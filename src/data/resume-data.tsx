@@ -1,236 +1,177 @@
 import type { ResumeData } from "@/lib/types";
 
 export const RESUME_DATA: ResumeData = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
-  about: "Full Stack Engineer dedicated to building high-quality products.",
+  name: "Shubham Kumar",
+  initials: "SK",
+  location: "Gurugram, India (IST)",
+  locationLink: "https://www.google.com/maps/place/Gurugram,+India",
+  about: "Senior DevOps and Embedded Systems Engineer specializing in automation, embedded Linux, and AWS infrastructure.",
   summary: (
     <>
-      Full Stack Engineer specializing in high-performance React applications,
-      scalable Node.js services, and real-time collaboration systems.
-      Experienced in technical architecture design and remote team leadership.
+      Senior DevOps and Embedded Systems Engineer with expertise in automation,
+      embedded Linux development, and managing scalable AWS cloud infrastructure.
+      Experienced in building CI/CD pipelines and embedded systems solutions.
     </>
   ),
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+  avatarUrl: "https://avatars.githubusercontent.com/u/109545827?v=4",
+  personalWebsiteUrl: "https://github.com/Shubham-Master",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "contactshubham.kr@gmail.com",
+    tel: null,
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/Shubham-Master",
         icon: "github",
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/contactshubham-kr/",
         icon: "linkedin",
-      },
-      {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: "x",
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "Lovely Professional University",
+      degree: "B.Tech in Electronics and Communication Engineering",
+      start: "2014",
+      end: "2018",
     },
   ],
   work: [
     {
-      company: "Motion",
-      link: "https://motionapp.com/",
-      badges: ["Remote", "AI", "React", "Next.js", "TypeScript", "AdonisJS"],
-      title: "Senior Software Engineer",
+      company: "AirFi Aviation Solutions",
+      link: "https://airfi.aero/",
+      badges: ["DevOps", "AWS", "CI/CD", "Automation"],
+      title: "Senior DevOps Engineer",
       start: "2025",
-      end: null,
+      end: "Present",
       description: (
         <>
-          Working on internal AI agents platform allowing marketing specialists
-          to create AI workflows.
-        </>
-      ),
-    },
-    {
-      company: "Film.io",
-      link: "https://film.io",
-      badges: ["Remote", "React", "Next.js", "TypeScript", "Node.js"],
-      title: "Software Architect",
-      start: "2024",
-      end: "2025",
-      description: (
-        <>
-          Leading technical architecture of a blockchain-based film funding
-          platform.
-          <ul className="list-inside list-disc">
-            <li>
-              Architecting migration from CRA to Next.js for improved
-              performance, SEO, and DX
-            </li>
-            <li>
-              Established release process enabling faster deployments and
-              reliable rollbacks
-            </li>
-            <li>
-              Implementing system-wide monitoring and security improvements
-            </li>
+          Promoted to lead AirFi’s DevOps initiatives, expanding collaboration with AirFi HQ in the Netherlands.
+          <ul className="list-disc list-inside mt-2">
+            <li>Spearheaded cross-country release strategies aligning hardware and firmware development.</li>
+            <li>Drove CI/CD automation reducing release cycles by 50%.</li>
+            <li>Mentored engineers across India and NL offices, strengthening cross-functional collaboration.</li>
           </ul>
         </>
       ),
     },
     {
-      company: "Parabol",
-      link: "https://parabol.co",
-      badges: [
-        "Remote",
-        "React",
-        "TypeScript",
-        "Node.js",
-        "GraphQL",
-        "Tailwind CSS",
-      ],
-      title: "Senior Full Stack Developer",
-      start: "2021",
+      company: "AirFi Aviation Solutions",
+      link: "https://airfi.aero/",
+      badges: ["Embedded Linux", "AWS", "Networking"],
+      title: "DevOps Engineer",
+      start: "2023",
       end: "2024",
       description: (
         <>
-          Senior developer and squad leader for an enterprise agile meeting
-          platform.
-          <ul className="list-inside list-disc">
-            <li>
-              Built design system with Tailwind CSS, improving development speed
-              and time to market
-            </li>
-            <li>
-              Implemented engineering practices: PR automation, code review
-              guidelines, and workflows
-            </li>
-            <li>
-              Open source contributions to Relay DevTools and React i18n tooling
-            </li>
+          Developed and deployed automation solutions across a fleet of 8,000+ embedded devices.
+          <ul className="list-disc list-inside mt-2">
+            <li>Automated firmware rollout pipelines cutting release time by 40%.</li>
+            <li>Built telemetry-based PMIC monitoring for proactive fault detection.</li>
+            <li>Developed secure remote diagnostics over LTE networks reducing MTTR by 35%.</li>
           </ul>
         </>
       ),
     },
     {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote", "React", "TypeScript", "Node.js", "Android", "Kotlin"],
-      title: "Lead Android Developer → Full Stack Developer",
-      start: "2015",
+      company: "Innoitus",
+      link: "",
+      badges: ["SRE", "Monitoring", "Documentation"],
+      title: "Site Reliability Engineer",
+      start: "2023",
+      end: "2023",
+      description: (
+        <>
+          Improved reliability practices through custom tooling and knowledge sharing.
+          <ul className="list-disc list-inside mt-2">
+            <li>Developed internal monitoring tools to enhance observability.</li>
+            <li>Streamlined ServiceNow incident workflows reducing escalation rates.</li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      company: "Amazon",
+      link: "https://www.amazon.in/",
+      badges: ["AWS", "CI/CD", "Kubernetes", "Monitoring"],
+      title: "Quality Analyst",
+      start: "2021",
+      end: "2023",
+      description: (
+        <>
+          Contributed to automation and infrastructure optimization within internal QA pipelines.
+          <ul className="list-disc list-inside mt-2">
+            <li>Built Jenkins pipelines integrating Prometheus and Grafana dashboards.</li>
+            <li>Managed AWS-based environments ensuring scalability and uptime.</li>
+            <li>Administered Kubernetes workloads with resource optimization.</li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      company: "Extreme Soft Management",
+      link: "",
+      badges: ["SRE", "Automation", "Linux"],
+      title: "Site Reliability Engineer",
+      start: "2019",
       end: "2021",
       description: (
         <>
-          Successfully transitioned from mobile to full-stack development while
-          leading distributed teams.
-          <ul className="list-inside list-disc">
-            <li>
-              Led frontend team at Evercast, building real-time platform
-              supporting 30+ users per room with HD streaming and collaboration
-              tools
-            </li>
-            <li>
-              Developed offline-first Android app for DKMS, improving donor
-              registration process
-            </li>
-            <li>
-              Led development teams across multiple successful client projects
-            </li>
+          Maintained critical production systems and introduced automation for repetitive infrastructure tasks.
+          <ul className="list-disc list-inside mt-2">
+            <li>Automated workflows saving 80+ engineering hours per month.</li>
+            <li>Improved uptime via system hardening and deployment standardization.</li>
           </ul>
         </>
       ),
-    },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: ["On Site", "Android", "Java", "Kotlin"],
-      title: "Android Developer → Lead Android Developer",
-      start: "2012",
-      end: "2015",
-      description: (
-        <>
-          First Android developer, grew and led a team of 15+ engineers while
-          establishing engineering culture.
-          <ul className="list-inside list-disc">
-            <li>
-              Developed apps for major Polish companies including LOT, Polskie
-              Radio, and Agora
-            </li>
-            <li>Built and mentored high-performing mobile development team</li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: ["On Site", "C/C++", "LTE", "Agile"],
-      title: "C/C++ Developer",
-      start: "2010",
-      end: "2012",
-      description:
-        "Developed software for LTE base stations at enterprise scale, gaining strong fundamentals in software architecture, testing practices, and cross-team collaboration.",
     },
   ],
   skills: [
-    "React/Next.js/Remix",
-    "TypeScript",
-    "Tailwind CSS",
-    "Design Systems",
-    "WebRTC",
-    "WebSockets",
-    "Node.js",
-    "GraphQL",
-    "Relay",
-    "System Architecture",
-    "Remote Team Leadership",
+    "DevOps",
+    "AWS",
+    "GCP",
+    "Buildroot",
+    "Embedded Linux",
+    "GitHub Actions",
+    "Jenkins",
+    "Python",
+    "Go",
+    "Grafana",
+    "Prometheus",
+    "System Automation",
   ],
   projects: [
     {
-      title: "Monito",
-      techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
+      title: "AirFi Battery Health Automation",
+      techStack: ["Python", "MongoDB", "Google Sheets API"],
       description:
-        "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
+        "Automated battery health monitoring and reporting system integrating data from devices into Google Sheets.",
       link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
+        label: "GitHub Repository",
+        href: "",
       },
     },
     {
-      title: "Consultly",
-      techStack: [
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
-        "Tailwind CSS",
-        "PostgreSQL",
-        "Redis",
-      ],
+      title: "AirFi Buildroot CI/CD",
+      techStack: ["GitHub Actions", "Docker", "AWS S3"],
       description:
-        "Platform for online consultations with real-time video meetings and scheduling",
+        "Implemented CI/CD pipelines for Buildroot embedded Linux builds with automated testing and deployment to AWS S3.",
       link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
+        label: "GitHub Repository",
+        href: "",
       },
     },
     {
-      title: "Minimalist CV",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
+      title: "Device Telemetry Dashboard",
+      techStack: ["Grafana", "Prometheus", "CouchDB"],
       description:
-        "An open source minimalist, print friendly CV template with a focus on readability and clean design. >9k stars on GitHub",
+        "Created a telemetry dashboard to visualize device metrics and logs using Grafana and Prometheus.",
       link: {
-        label: "Minimalist CV",
-        href: "https://github.com/BartoszJarocki/cv",
+        label: "GitHub Repository",
+        href: "",
       },
     },
   ],
