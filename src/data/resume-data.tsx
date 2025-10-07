@@ -142,36 +142,41 @@ export const RESUME_DATA: ResumeData = {
     "Grafana",
     "Prometheus",
     "System Automation",
+    "Azure",
+    "Docker",
+    "Kubernetes",
+    "Bash"
+    ,
   ],
   projects: [
     {
-      title: "AirFi Battery Health Automation",
-      techStack: ["Python", "MongoDB", "Google Sheets API"],
+      title: "Smart Home Automation System",
+      techStack: ["Raspberry Pi", "Python", "MQTT", "Node-RED"],
       description:
-        "Automated battery health monitoring and reporting system integrating data from devices into Google Sheets.",
+        "Developed a modular home automation setup using Raspberry Pi and IoT sensors for real-time control of lights, fans, and environmental monitoring through MQTT and Node-RED dashboard.",
       link: {
         label: "GitHub Repository",
-        href: "",
+        href: "https://github.com/Shubham-Master/smart-home",
       },
     },
     {
-      title: "AirFi Buildroot CI/CD",
-      techStack: ["GitHub Actions", "Docker", "AWS S3"],
+      title: "Personal Cloud Dashboard",
+      techStack: ["Next.js", "TypeScript", "AWS Lambda", "DynamoDB"],
       description:
-        "Implemented CI/CD pipelines for Buildroot embedded Linux builds with automated testing and deployment to AWS S3.",
+        "Built a serverless cloud dashboard to manage and visualize personal resources across AWS, with API integration for real-time usage metrics and notifications.",
       link: {
         label: "GitHub Repository",
-        href: "",
+        href: "https://github.com/Shubham-Master/cloud-dashboard",
       },
     },
     {
-      title: "Device Telemetry Dashboard",
-      techStack: ["Grafana", "Prometheus", "CouchDB"],
+      title: "Flight Analytics Visualizer",
+      techStack: ["Python", "Plotly", "Pandas"],
       description:
-        "Created a telemetry dashboard to visualize device metrics and logs using Grafana and Prometheus.",
+        "Created a data visualization tool to analyze flight performance, passenger metrics, and battery health trends using Plotly dashboards powered by real-world datasets.",
       link: {
         label: "GitHub Repository",
-        href: "",
+        href: "https://github.com/Shubham-Master/flight-analytics",
       },
     },
   ],
