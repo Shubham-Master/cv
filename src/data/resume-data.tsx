@@ -13,7 +13,7 @@ export const RESUME_DATA: ResumeData = {
       Experienced in building CI/CD pipelines and embedded systems solutions.
     </>
   ),
-  avatarUrl: "https://avatars.githubusercontent.com/u/109545827?v=4",
+  avatarUrl: " https://avatars.githubusercontent.com/u/155751376?v=4",
   personalWebsiteUrl: "https://github.com/Shubham-Master",
   contact: {
     email: "contactshubham.kr@gmail.com",
@@ -130,23 +130,31 @@ export const RESUME_DATA: ResumeData = {
     },
   ],
   skills: [
-    "DevOps",
     "AWS",
-    "GCP",
+    "AWS Lambda",
+    "Azure",
+    "Bash",
     "Buildroot",
+    "DynamoDB",
+    "DevOps",
+    "Docker",
     "Embedded Linux",
+    "GCP",
     "GitHub Actions",
-    "Jenkins",
-    "Python",
     "Go",
     "Grafana",
-    "Prometheus",
-    "System Automation",
-    "Azure",
-    "Docker",
+    "Jenkins",
     "Kubernetes",
-    "Bash"
-    ,
+    "MQTT",
+    "Next.js",
+    "Node-RED",
+    "Pandas",
+    "Plotly",
+    "Prometheus",
+    "Python",
+    "Raspberry Pi",
+    "System Automation",
+    "TypeScript"
   ],
   projects: [
     {
