@@ -33,7 +33,7 @@ export const RESUME_DATA: ResumeData = {
   },
   education: [
     {
-      school: "Lovely Professional University",
+      school: "RNS Institute of Technology",
       degree: "B.Tech in Electronics and Communication Engineering",
       start: "2014",
       end: "2018",
