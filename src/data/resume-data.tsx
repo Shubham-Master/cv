@@ -13,7 +13,7 @@ export const RESUME_DATA: ResumeData = {
       Experienced in building CI/CD pipelines and embedded systems solutions.
     </>
   ),
-  avatarUrl: " https://avatars.githubusercontent.com/u/155751376?v=4",
+  avatarUrl: "https://avatars.githubusercontent.com/u/155751376?v=4",
   personalWebsiteUrl: "https://github.com/Shubham-Master",
   contact: {
     email: "contactshubham.kr@gmail.com",
