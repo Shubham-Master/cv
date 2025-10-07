@@ -16,7 +16,7 @@ export const RESUME_DATA: ResumeData = {
   avatarUrl: "https://avatars.githubusercontent.com/u/155751376?v=4",
   personalWebsiteUrl: "https://github.com/Shubham-Master",
   contact: {
-    email: "contactshubham.kr@gmail.com",
+    email: "shubham46.56@gmail.com",
     tel: "+91 8073314155",
     social: [
       {
@@ -43,32 +43,26 @@ export const RESUME_DATA: ResumeData = {
     {
       company: "AirFi Aviation Solutions",
       link: "https://airfi.aero/",
-      badges: ["DevOps", "AWS", "CI/CD", "Automation"],
+      badges: ["DevOps", "AWS", "CI/CD", "Automation", "Embedded Linux", "Networking"],
       title: "Senior DevOps Engineer",
-      start: "2025",
+      start: "2023",
       end: "Present",
       description: (
         <>
-          Promoted to lead AirFi’s DevOps initiatives, expanding collaboration with AirFi HQ in the Netherlands.
-          <ul className="list-disc list-inside mt-2">
+          <p>
+            Progressed from DevOps Engineer to Senior DevOps Engineer, leading automation,
+            CI/CD, and infrastructure initiatives across AirFi’s global aviation hardware fleet.
+          </p>
+          <h4 className="font-semibold mt-2">Senior DevOps Engineer (2025–Present)</h4>
+          <ul className="list-disc list-inside mt-1">
+            <li>Promoted to lead AirFi’s DevOps initiatives, expanding collaboration with AirFi HQ in the Netherlands.</li>
             <li>Spearheaded cross-country release strategies aligning hardware and firmware development.</li>
             <li>Drove CI/CD automation reducing release cycles by 50%.</li>
             <li>Mentored engineers across India and NL offices, strengthening cross-functional collaboration.</li>
           </ul>
-        </>
-      ),
-    },
-    {
-      company: "AirFi Aviation Solutions",
-      link: "https://airfi.aero/",
-      badges: ["Embedded Linux", "AWS", "Networking"],
-      title: "DevOps Engineer",
-      start: "2023",
-      end: "2024",
-      description: (
-        <>
-          Developed and deployed automation solutions across a fleet of 8,000+ embedded devices.
-          <ul className="list-disc list-inside mt-2">
+          <h4 className="font-semibold mt-4">DevOps Engineer (2023–2024)</h4>
+          <ul className="list-disc list-inside mt-1">
+            <li>Developed and deployed automation solutions across a fleet of 8,000+ embedded devices.</li>
             <li>Automated firmware rollout pipelines cutting release time by 40%.</li>
             <li>Built telemetry-based PMIC monitoring for proactive fault detection.</li>
             <li>Developed secure remote diagnostics over LTE networks reducing MTTR by 35%.</li>
@@ -130,31 +124,31 @@ export const RESUME_DATA: ResumeData = {
     },
   ],
   skills: [
-    "AWS",
-    "AWS Lambda",
-    "Azure",
-    "Bash",
-    "Buildroot",
-    "DynamoDB",
-    "DevOps",
-    "Docker",
-    "Embedded Linux",
-    "GCP",
-    "GitHub Actions",
-    "Go",
-    "Grafana",
-    "Jenkins",
-    "Kubernetes",
-    "MQTT",
-    "Next.js",
-    "Node-RED",
-    "Pandas",
-    "Plotly",
-    "Prometheus",
-    "Python",
-    "Raspberry Pi",
-    "System Automation",
-    "TypeScript"
+    { name: "AWS", icon: "aws" },
+    { name: "AWS Lambda", icon: "aws" },
+    { name: "Azure", icon: "azure" },
+    { name: "Bash", icon: "bash" },
+    { name: "Buildroot", icon: "linux" },
+    { name: "DynamoDB", icon: "aws" },
+    { name: "DevOps", icon: "gear" },
+    { name: "Docker", icon: "docker" },
+    { name: "Embedded Linux", icon: "linux" },
+    { name: "GCP", icon: "googlecloud" },
+    { name: "GitHub Actions", icon: "github" },
+    { name: "Go", icon: "go" },
+    { name: "Grafana", icon: "grafana" },
+    { name: "Jenkins", icon: "jenkins" },
+    { name: "Kubernetes", icon: "kubernetes" },
+    { name: "MQTT", icon: "mqtt" },
+    { name: "Next.js", icon: "nextjs" },
+    { name: "Node-RED", icon: "nodered" },
+    { name: "Pandas", icon: "pandas" },
+    { name: "Plotly", icon: "plotly" },
+    { name: "Prometheus", icon: "prometheus" },
+    { name: "Python", icon: "python" },
+    { name: "Raspberry Pi", icon: "raspberrypi" },
+    { name: "System Automation", icon: "settings" },
+    { name: "TypeScript", icon: "typescript" }
   ],
   projects: [
     {
