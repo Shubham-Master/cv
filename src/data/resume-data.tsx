@@ -1,9 +1,17 @@
 // app/resume/page.tsx
 "use client";
 
-import { motion } from "framer-motion";
+let motion: any;
+try {
+  motion = require("framer-motion").motion;
+  console.log("✅ Framer Motion animations enabled.");
+} catch {
+  console.warn("⚠️ framer-motion not found, animations disabled.");
+  motion = { div: (props: any) => <div {...props} /> };
+}
+
 import Link from "next/link";
-import { RESUME_DATA } from "@/lib/resume-data";
+import { RESUME_DATA } from "@/data/resume-data";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
