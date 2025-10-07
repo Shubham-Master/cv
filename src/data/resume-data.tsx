@@ -1,9 +1,9 @@
 import type { ResumeData } from "@/lib/types";
 
 export const RESUME_DATA: ResumeData = {
-  name: "Shubham Kumar",
-  initials: "SK",
-  location: "Gurugram, India, IST",
+  name: "Bartosz Jarocki",
+  initials: "BJ",
+  location: "Wrocław, Poland, CET",
   locationLink: "https://www.google.com/maps/place/Wrocław",
   about: "Full Stack Engineer dedicated to building high-quality products.",
   summary: (
