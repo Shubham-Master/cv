@@ -73,7 +73,7 @@ export const RESUME_DATA: ResumeData = {
     {
       company: "Innoitus",
       link: "",
-      badges: ["SRE", "Monitoring", "Documentation"],
+      badges: ["SRE", "Monitoring", "New Relic"],
       title: "Site Reliability Engineer",
       start: "2023",
       end: "2023",
@@ -133,6 +133,7 @@ export const RESUME_DATA: ResumeData = {
     "DevOps",
     "Docker",
     "Embedded Linux",
+    "New Relic"
     "GCP",
     "GitHub Actions",
     "Go",
