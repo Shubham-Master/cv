@@ -133,7 +133,7 @@ export const RESUME_DATA: ResumeData = {
     "DevOps",
     "Docker",
     "Embedded Linux",
-    "New Relic"
+    "New Relic",
     "GCP",
     "GitHub Actions",
     "Go",
