@@ -125,7 +125,6 @@ export const RESUME_DATA: ResumeData = {
   ],
   skills: [
     "AWS",
-    "AWS Lambda",
     "Azure",
     "Bash",
     "Buildroot",
@@ -143,13 +142,13 @@ export const RESUME_DATA: ResumeData = {
     "MQTT",
     "Next.js",
     "Node-RED",
-    "Pandas",
-    "Plotly",
+    "Helm",
+    "Ansible",
     "Prometheus",
     "Python",
-    "Raspberry Pi",
+    "MongoDB",
     "System Automation",
-    "TypeScript"
+    "Terraform"
   ],
   projects: [
     {
