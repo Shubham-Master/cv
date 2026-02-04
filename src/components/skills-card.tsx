@@ -1,47 +1,65 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
-type TSkill = { icon: string, href: string, alt: string }
+import type { TSkill } from "@/lib/types";
+import { Section } from "./ui/section";
 
 // Skills component
-const Skills = ({ skills }: { skills: object[] }) => {
-    const allCategories: string[] = skills.map((skill: any) => skill.category)
-    const categories = Array.from(new Set(allCategories));
+const Skills = ({ skills }: { skills: TSkill[] }) => {
+    
     return (
-        <section>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 m-2 justify-around align-middle">
-                {categories.map((category: string) => (<SkillCategory key={category} title={category} skillItems={skills} />))}
-            </div>
-        </section>)
+        <Section> 
+              <h2 className="text-xl font-bold" id="skills-section">
+                Skills
+              </h2>
+        <Card className="service-item gap-2 flex flex-col flex-wrap capitalize border border-muted p-3 print:border-none">
+         <CardContent className="grid grid-cols-4 md:grid-cols-10 gap-2 lg:gap-4 justify-center items-center print:hidden">
+             {skills.map((skill: TSkill, index: number) => (
+                 <SkillItem key={index} href={skill.href} alt={skill.alt} icon={skill.icon} />))
+
+             }
+         </CardContent>
+         <CardContent className="hidden p-2 print:block  print:text-[12px]">
+             <ul className="list-disc text-xs grid grid-cols-2 gap-1 mx-2">
+                 {skills.map((skill: TSkill, index: number) => (
+                     <li key={index}> {skill.alt}</li>))
+
+                 }
+             </ul>
+         </CardContent>
+
+     </Card>
+            </Section>
+    )
 };
 
 
 
-const SkillCategory = ({ title, skillItems }: { title: string, skillItems: any[] }) => {
-    const items = skillItems.filter(skill => skill.category === title);
-    return (<Card className="service-item gap-2 flex flex-col flex-wrap capitalize border border-muted p-3 print:border-none">
-        <CardHeader className="">
-            <CardTitle className="text-base">
-                <p>{title}</p>
-            </CardTitle>
-        </CardHeader>
-        <CardContent className="grid grid-cols-4 md:grid-cols-6 gap-2 lg:gap-4 justify-center items-center print:hidden">
-            {items.map((skill: any, index: number) => (
-                <SkillItem key={index} href={skill.href} alt={skill.skill} icon={skill.icon.light} />))
+// const SkillCategory = ({ title, skillItems }: { title: string, skillItems: any[] }) => {
+//     const items = skillItems.filter(skill => skill.category === title);
+//     return (<Card className="service-item gap-2 flex flex-col flex-wrap capitalize border border-muted p-3 print:border-none">
+//         <CardHeader className="">
+//             <CardTitle className="text-base">
+//                 <p>{title}</p>
+//             </CardTitle>
+//         </CardHeader>
+//         <CardContent className="grid grid-cols-4 md:grid-cols-6 gap-2 lg:gap-4 justify-center items-center print:hidden">
+//             {items.map((skill: any, index: number) => (
+//                 <SkillItem key={index} href={skill.href} alt={skill.skill} icon={skill.icon.light} />))
 
-            }
-        </CardContent>
-        <CardContent className="hidden p-2 print:block  print:text-[12px]">
-            <ul className="list-disc text-xs grid grid-cols-2 gap-1 mx-2">
-                {items.map((skill: any, index: number) => (
-                    <li key={index}> {skill.skill}</li>))
+//             }
+//         </CardContent>
+//         <CardContent className="hidden p-2 print:block  print:text-[12px]">
+//             <ul className="list-disc text-xs grid grid-cols-2 gap-1 mx-2">
+//                 {items.map((skill: any, index: number) => (
+//                     <li key={index}> {skill.skill}</li>))
 
-                }
-            </ul>
-        </CardContent>
+//                 }
+//             </ul>
+//         </CardContent>
 
-    </Card>)
-}
+//     </Card>)
+// }
 
 
 const SkillItem = ({ icon, href, alt }: { icon: string, href: string, alt: string }) => (
@@ -54,11 +72,10 @@ const SkillItem = ({ icon, href, alt }: { icon: string, href: string, alt: strin
                     alt={alt}
                     width="0"
                     height="0"
-                    sizes="100vw"
+                    sizes="50vw"
                 />
             </div>
         </a>
     </>
 );
-
-export default Skills;
+export { Skills };

@@ -7,6 +7,18 @@ const nextConfig = {
   images: {
     domains: ['avatars.githubusercontent.com'],
     formats: ['image/avif', 'image/webp'],
+    remotePatterns: [
+            { hostname: "media.licdn.com" },
+            { hostname: "cdn.cutshort.io" },
+            { hostname: "avatars.githubusercontent.com" },
+            { hostname: "wikimedia.org" },
+            { hostname: "upload.wikimedia.org" },
+            { hostname: "raw.githubusercontent.com" },
+            { hostname: "couchdb.apache.org" },
+            { hostname: "fly.io" },
+            { hostname: "www.zsh.org" },
+            { hostname: "uxwing.com" },
+        ],
     minimumCacheTTL: 60,
   },
 

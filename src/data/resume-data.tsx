@@ -124,31 +124,67 @@ export const RESUME_DATA: ResumeData = {
     },
   ],
   skills: [
-    "AWS",
-    "Azure",
-    "Bash",
-    "Buildroot",
-    "DynamoDB",
-    "DevOps",
-    "Docker",
-    "Embedded Linux",
-    "New Relic",
-    "GCP",
-    "GitHub Actions",
-    "Go",
-    "Grafana",
-    "Jenkins",
-    "Kubernetes",
-    "MQTT",
-    "Next.js",
-    "Node-RED",
-    "Helm",
-    "Ansible",
-    "Prometheus",
-    "Python",
-    "MongoDB",
-    "System Automation",
-    "Terraform"
+    {
+  "href": "https://kubernetes.io/",
+  "icon":  "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/kubernetes-icon.png",
+  "alt": "Kubernetes",
+},
+  {
+  "href": "https://kubernetes.io/",
+  "icon":  "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/kubernetes-icon.png",
+  "alt": "Kubernetes",
+},
+  {
+  "href": "https://kubernetes.io/",
+  "icon":  "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/kubernetes-icon.png",
+  "alt": "Kubernetes",
+},
+  {
+  "href": "https://kubernetes.io/",
+  "icon":  "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/kubernetes-icon.png",
+  "alt": "Kubernetes",
+},
+  {
+  "href": "https://kubernetes.io/",
+  "icon":  "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/kubernetes-icon.png",
+  "alt": "Kubernetes",
+},
+  {
+        "href": "https://www.mongodb.com/",
+        "icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg",
+        "alt": "MongoDB"
+},
+ {
+        "href": "https://www.postgresql.org/",
+        "icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg",
+        "alt": "PostgreSQL"
+},
+  {
+  "href": "https://terraform.io/",
+  "icon":  "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/terraform-software-icon.png",
+  "alt": "Terraform",
+},
+  {
+  "href": "https://kubernetes.io/",
+  "icon":  "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/kubernetes-icon.png",
+  "alt": "Kubernetes",
+},
+  {
+  "href": "https://kubernetes.io/",
+  "icon":  "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/kubernetes-icon.png",
+  "alt": "Kubernetes",
+},
+  {
+  "href": "https://kubernetes.io/",
+  "icon":  "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/kubernetes-icon.png",
+  "alt": "Kubernetes",
+},
+  {
+  "href": "https://kubernetes.io/",
+  "icon":  "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/kubernetes-icon.png",
+  "alt": "Kubernetes",
+}
+
   ],
   projects: [
     {
