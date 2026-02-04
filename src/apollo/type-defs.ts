@@ -8,7 +8,17 @@ export class Social {
   @Field(() => String)
   url: string;
 }
+@ObjectType()
+export class Skill {
+  @Field(() => String)
+  href: string;
 
+  @Field(() => String)
+  alt: string;
+
+  @Field(() => String)
+  icon: string;
+}
 @ObjectType()
 export class Contact {
   @Field(() => String)
@@ -119,8 +129,8 @@ export class Me {
   @Field(() => [Work])
   work: Work[];
 
-  @Field(() => [String])
-  skills: string[];
+  @Field(() => [Skill])
+  skills: Skill[];
 
   @Field(() => [Project])
   projects: Project[];
