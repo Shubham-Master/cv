@@ -3,12 +3,12 @@ import { Suspense } from "react";
 import { CommandMenu } from "@/components/command-menu";
 import { SectionErrorBoundary } from "@/components/section-error-boundary";
 import { SectionSkeleton } from "@/components/section-skeleton";
+import { Skills } from "@/components/skills-card";
 import { RESUME_DATA } from "@/data/resume-data";
 import { generateResumeStructuredData } from "@/lib/structured-data";
 import { Education } from "./components/Education";
 import { Header } from "./components/Header";
 import { Projects } from "./components/Projects";
-import { Skills } from "@/components/skills-card";
 import { Summary } from "./components/Summary";
 import { WorkExperience } from "./components/WorkExperience";
 

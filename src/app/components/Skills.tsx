@@ -1,51 +1,74 @@
 import React from "react";
-import { Badge } from "@/components/ui/badge";
 import { Section } from "@/components/ui/section";
 import { cn } from "@/lib/utils";
 
-type Skills = readonly string[];
+type SkillItem = {
+  href: string;
+  icon: string;
+  alt: string;
+};
 
-interface SkillsListProps {
-  skills: Skills;
+type GroupedSkills = {
+  tools: SkillItem[];
+  frameworkAndRuntime: SkillItem[];
+  programmingLanguage: SkillItem[];
+  databases: SkillItem[];
+};
+
+interface SkillsProps {
+  skills: GroupedSkills;
   className?: string;
 }
 
-/**
- * Renders a list of skills as badges
- */
-function SkillsList({ skills, className }: SkillsListProps) {
+function SkillsGrid({ title, items }: { title: string; items: SkillItem[] }) {
   return (
-    <ul
-      className={cn("flex list-none flex-wrap gap-1 p-0", className)}
-      aria-label="List of skills"
-    >
-      {skills.map((skill) => (
-        <li key={skill}>
-          <Badge className="print:text-[10px]" aria-label={`Skill: ${skill}`}>
-            {skill}
-          </Badge>
-        </li>
-      ))}
-    </ul>
+    <div className="rounded-xl border p-6">
+      <h3 className="mb-4 text-lg font-semibold">{title}</h3>
+
+      <div className="flex flex-wrap gap-6">
+        {items.map((skill) => (
+          <a
+            key={skill.alt}
+            href={skill.href}
+            target="_blank"
+            rel="noreferrer"
+            className="transition-transform hover:scale-105"
+            title={skill.alt}
+          >
+            <img
+              src={skill.icon}
+              alt={skill.alt}
+              className="h-10 w-10 object-contain"
+            />
+          </a>
+        ))}
+      </div>
+    </div>
   );
 }
 
-interface SkillsProps {
-  skills: Skills;
-  className?: string;
-}
-
-/**
- * Skills section component
- * Displays a list of professional skills as badges
- */
 export function Skills({ skills, className }: SkillsProps) {
   return (
-    <Section className={className}>
-      <h2 className="text-xl font-bold" id="skills-section">
+    <Section className={cn(className)}>
+      <h2 className="mb-6 text-xl font-bold" id="skills-section">
         Skills
       </h2>
-      <SkillsList skills={skills} aria-labelledby="skills-section" />
+
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+        <SkillsGrid title="Tools" items={skills.tools} />
+
+        <SkillsGrid
+          title="Framework And Runtime"
+          items={skills.frameworkAndRuntime}
+        />
+
+        <SkillsGrid
+          title="Programming Language"
+          items={skills.programmingLanguage}
+        />
+
+        <SkillsGrid title="Databases" items={skills.databases} />
+      </div>
     </Section>
   );
 }

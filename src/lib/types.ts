@@ -1,8 +1,17 @@
 import type { StaticImageData } from "next/image";
 
-export type TSkill = { icon: string, href: string, alt: string }
+export type TSkill = { icon: string; href: string; alt: string };
 
-export type ResumeIcon = React.ComponentType<React.SVGProps<SVGSVGElement>> | StaticImageData;
+export type GroupedSkills = {
+  tools: TSkill[];
+  frameworkAndRuntime: TSkill[];
+  programmingLanguage: TSkill[];
+  databases: TSkill[];
+};
+
+export type ResumeIcon =
+  | React.ComponentType<React.SVGProps<SVGSVGElement>>
+  | StaticImageData;
 
 export type IconType = "github" | "linkedin" | "x" | "globe" | "mail" | "phone";
 
@@ -39,7 +48,7 @@ export interface ResumeData {
     end: string | null;
     description: string | React.ReactNode;
   }>;
-  skills: TSkill[];
+  skills: GroupedSkills;
   projects: Array<{
     title: string;
     techStack: string[];
@@ -147,7 +156,12 @@ export function resumeDataToGraphQL(data: ResumeData): GraphQLMe {
       end: job.end || "Present",
       description: reactToString(job.description),
     })),
-    skills: data.skills,
+    skills: [
+      ...data.skills.tools,
+      ...data.skills.frameworkAndRuntime,
+      ...data.skills.programmingLanguage,
+      ...data.skills.databases,
+    ],
     projects: data.projects.map((project) => ({
       title: project.title,
       techStack: project.techStack,
