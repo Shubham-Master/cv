@@ -59,8 +59,8 @@ export const RESUME_DATA: ResumeData = {
         "Observability",
         "Cloud",
       ],
-      title: "Senior Platform Engineer",
-      start: "2025",
+      title: "Cloud Platform Engineer",
+      start: "2026",
       end: "Present",
       description: (
         <>
