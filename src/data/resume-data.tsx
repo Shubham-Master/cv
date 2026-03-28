@@ -50,6 +50,37 @@ export const RESUME_DATA: ResumeData = {
   ],
   work: [
     {
+      company: "SingleStore",
+      link: "https://www.singlestore.com/",
+      badges: [
+        "Platform Engineering",
+        "Kubernetes",
+        "CI/CD",
+        "Observability",
+        "Cloud",
+      ],
+      title: "Senior Platform Engineer",
+      start: "2025",
+      end: "Present",
+      description: (
+        <>
+          Working on platform and infrastructure initiatives that improve
+          delivery reliability, cloud operations, and developer productivity.
+          <ul className="list-disc list-inside mt-2">
+            <li>
+              Contributing to Kubernetes, CI/CD, and automation improvements to
+              make releases more reliable and reduce manual operational work.
+            </li>
+            <li>
+              Strengthening observability and platform workflows so teams can
+              troubleshoot production issues faster and operate services more
+              confidently.
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
       company: "AirFi Aviation Solutions",
       link: "https://airfi.aero/",
       badges: [
@@ -62,7 +93,7 @@ export const RESUME_DATA: ResumeData = {
       ],
       title: "Senior DevOps Engineer",
       start: "2023",
-      end: "Present",
+      end: "2025",
       description: (
         <>
           <p>
@@ -70,9 +101,7 @@ export const RESUME_DATA: ResumeData = {
             automation, CI/CD, and infrastructure initiatives across AirFi’s
             global aviation hardware fleet.
           </p>
-          <h4 className="font-semibold mt-2">
-            Senior DevOps Engineer (2025–Present)
-          </h4>
+          <h4 className="font-semibold mt-2">Senior DevOps Engineer (2025)</h4>
           <ul className="list-disc list-inside mt-1">
             <li>
               Promoted to lead AirFi’s DevOps initiatives, expanding
