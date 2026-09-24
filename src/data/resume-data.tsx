@@ -6,7 +6,7 @@ export const RESUME_DATA: ResumeData = {
   location: "Gurugram, India (IST)",
   locationLink: "https://www.google.com/maps/place/Gurugram,+India",
   about:
-    "Cloud Platform Engineer / Site Reliability Engineer with a DevOps foundation, now increasingly focused on AI Platform Operations (AWS Bedrock, RAG, FinOps, and cost optimization).",
+    "Cloud Platform Engineer / Site Reliability Engineer with a DevOps foundation, focused on running stateful identity platforms (Ping Identity, ForgeRock DS/IDM, OIDC/OAuth2) alongside Kubernetes infrastructure, FinOps, and production AI tooling on AWS Bedrock.",
   summary: (
     <>
       Cloud Platform Engineer / Site Reliability Engineer with 7+ years of
@@ -15,11 +15,13 @@ export const RESUME_DATA: ResumeData = {
       That foundation is still how I approach systems design today.
       <br />
       <br />
-      Over the past year I&apos;ve been increasingly focused on AI Platform
-      Operations: building and operating production AI tooling on AWS Bedrock
+      Most of my day-to-day now sits on the identity side: running a
+      production Zero Trust identity platform (Ping Identity, ForgeRock DS/IDM,
+      OIDC/OAuth2) — the stateful, high-blast-radius kind of infrastructure
+      where automation and observability actually matter. Alongside that I own
+      FinOps cost governance and have built production AI tooling on AWS Bedrock
       with Claude models, including a human-gated RAG auto-triage agent and an
-      AI-assisted incident RCA tool, alongside FinOps cost governance and Zero
-      Trust identity (Keycloak, OIDC/OAuth2).
+      AI-assisted incident RCA tool.
     </>
   ),
   avatarUrl: "https://avatars.githubusercontent.com/u/155751376?v=4",
@@ -82,8 +84,8 @@ export const RESUME_DATA: ResumeData = {
               via Kubecost against real AWS billing.
             </li>
             <li>
-              Own the production Keycloak identity platform (Zero Trust,
-              OIDC/OAuth2) serving ~150 daily internal users.
+              Own the production Zero Trust identity platform (Ping Identity,
+              ForgeRock DS/IDM, OIDC/OAuth2) serving ~150 daily internal users.
             </li>
             <li>
               Contribute Go backend code to an internal multi-cloud
@@ -314,9 +316,9 @@ export const RESUME_DATA: ResumeData = {
         alt: "FinOps / Cost Optimization",
       },
       {
-        href: "https://www.keycloak.org/",
+        href: "https://www.pingidentity.com/",
         icon: "https://uxwing.com/wp-content/themes/uxwing/download/crime-security-military-law/shield-lock-black-icon.png",
-        alt: "Keycloak / Zero Trust IAM",
+        alt: "Ping Identity / ForgeRock — Zero Trust IAM",
       },
     ],
 
